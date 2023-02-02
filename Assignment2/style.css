@@ -1,0 +1,29 @@
+
+
+#navbar{
+    list-style-type: none;
+    margin: -10px;
+    padding: 30px;
+    border: 0;
+    overflow: hidden;
+    background-color: ghostwhite;
+}
+
+li {
+    display: inline;
+    float: right;
+}
+
+li a {
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    text-decoration: none;
+    color: black;
+
+}
+
+li a:hover {
+    background-color: grey;
+}
