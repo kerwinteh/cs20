@@ -1,29 +1,96 @@
-
-
-#navbar{
-    list-style-type: none;
-    margin: -10px;
-    padding: 30px;
-    border: 0;
-    overflow: hidden;
-    background-color: ghostwhite;
+html, body {
+    font-size: 25px;
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #E7F3FA;
 }
-
-li {
-    display: inline;
-    float: right;
-}
-
-li a {
-    display: block;
-    padding: 20px;
-    margin: 0 auto;
-    background-color: ghostwhite;
+#home-name {
+    position: relative;
+    bottom: 30px;
+    right: 2px;
+    font-size: 35px;
     text-decoration: none;
     color: black;
-
 }
 
-li a:hover {
-    background-color: grey;
+.navbar{
+    background: #E7F3FA;
+    margin: -10px;
+    padding: 20px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+ul.nav {
+    text-align: center;
+    display: inline-block;
+    float: right;
+    margin: 10px;
+    padding: 30px;
+    background-color: #E7F3FA;
+    overflow: hidden;
+}
+ul.nav a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    padding: 5px;
+}
+ul.nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+ul.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 10px;
+}
+#logo {
+    width: 90px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+#scooter {
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.about {
+    font-family: Optima;
+    padding: 5%;
+    text-align: center;
+}
+
+.who p {
+    font-family: Arial;
+}
+
+#studentimg {
+    border-radius: 15px;
+    width: 45%;
+}
+
+/*#mission {*/
+/*    background-color: #eff4ff;*/
+/*    padding: 2px;*/
+/*}*/
+
+#scooter-pic {
+    width: 60%;
+    border-radius: 15px;
+}
+
+.footer {
+    position: fixed;
+    font-size: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0c141b;
+    color: white;
+    text-align: center;
 }
