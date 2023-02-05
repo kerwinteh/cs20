@@ -103,7 +103,7 @@ table, th, td {
 }
 
 #form {
-    font-size: 70%;
+    font-size: 80%;
     margin-top: 100px;
     margin-left: 50px;
 }
@@ -144,7 +144,6 @@ table, th, td {
         text-decoration: none;
         list-style-type: none;
         color: black;
-        padding: 0px;
     }
     ul.nav a:hover {
         background-color: rgba(255, 255, 255, 0.3);
@@ -158,10 +157,10 @@ table, th, td {
         list-style-type: none;
     }
     .nav-mobile li {
-        margin: -10px;
+        margin: 3px;
     }
     .nav-mobile a {
-        margin: 50px;
+        margin: 20px;
         color: black;
         padding: 2px;
     }
