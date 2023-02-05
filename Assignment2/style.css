@@ -124,3 +124,32 @@ table, th, td {
     background-color: #a7b3ba;
 }
 
+@media only screen and (max-width: 780px) {
+    .navbar{
+        background-color: #E7F3FA;
+        padding: 5px;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+    ul.nav {
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        padding: 0px;
+        background-color: #E7F3FA;
+        overflow: hidden;
+    }
+    ul.nav a{
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+        padding: 100px;
+    }
+    ul.nav a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 2px;
+        border-radius: 10px;
+    }
+}
+
