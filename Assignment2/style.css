@@ -117,6 +117,7 @@ table, th, td {
 }
 
 #submit {
+    color: black;
     background-color: #E7F3FA;
     font-size: 18px;
     border: 1px solid grey;
