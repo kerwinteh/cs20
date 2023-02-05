@@ -4,24 +4,25 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background-color: #E7F3FA;
 }
 #home-name {
     position: relative;
     bottom: 30px;
     right: 2px;
     font-size: 35px;
-    text-decoration: none;
     color: black;
 }
 
 .navbar{
     background: #E7F3FA;
-    margin: -10px;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     overflow: hidden;
     position: fixed;
     width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
 }
 ul.nav {
     text-align: center;
@@ -53,11 +54,6 @@ ul.nav a:hover {
     margin-left: 60px;
     margin-top: 10px;
 }
-#scooter {
-    display: block;
-    width: 100%;
-    vertical-align: bottom;
-}
 
 .about {
     font-family: Optima;
@@ -74,11 +70,6 @@ ul.nav a:hover {
     width: 45%;
 }
 
-/*#mission {*/
-/*    background-color: #eff4ff;*/
-/*    padding: 2px;*/
-/*}*/
-
 #scooter-pic {
     width: 60%;
     border-radius: 15px;
@@ -94,3 +85,42 @@ ul.nav a:hover {
     color: white;
     text-align: center;
 }
+
+table, th, td {
+    height: 10px;
+    border:1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#form {
+    font-size: 70%;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.box {
+    height: 25px;
+}
+#subject {
+    height: 100px;
+    width: 300px;
+}
+
+#submit {
+    background-color: #E7F3FA;
+    font-size: 18px;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#submit:hover {
+    background-color: #a7b3ba;
+}
+
