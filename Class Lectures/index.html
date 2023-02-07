@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      body {
+        background-color: linen;
+      }
+      h1 {
+        color: maroon;
+        margin-left: 40px;
+      }
+      #txtName {
+        margin-left: 23px;
+      }
+    </style>
+</head>
+<body>
+  <h1>FORMS</h1>
+  <form name="form1" id="">
+    <label for="txtName">Name:</label> <input type="text" name="txtName" id="txtName" placeholder="name">
+    <br/>
+    <label for="password">Password:</label> <input type="password" name="password" id="password" placeholder="pass">
+    <br/>
+    <input type="radio" name="choice" value="yes" checked="true">yes
+    <input type="radio" name="choice" value="no">no
+    <br/>
+    <input type="checkbox" name="choice1">1
+    <input type="checkbox" name="choice2">2
+    <br/>
+    <label for="options">Choose an option:</label>
+    <select name="option" id="options">
+      <option> option 1 </option>
+      <option> option 2 </option>
+      <option> option 3 </option>
+    </select>
+    <br/>
+    <textarea rows="5" placeholder="text here"></textarea>
+    <br/>
+    <input type="submit" value="Buy Now">
+    <input type="reset">
+    <br/>
+    <input type="button" value="press me" onclick="alert('hello')">
+  </form>
+
+</body>
+</html>
