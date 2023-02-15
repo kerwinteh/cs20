@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href = "style.css" ?>
+<Songs>
+    <header>My Song List</header>
+    <song id="odd">
+        <title>Bad Blood</title>
+        <artists>
+            <artist>Taylor Swift</artist>
+            <artist>Kendrick Lamar</artist>
+        </artists>
+        <genres>
+            <genre>Pop</genre>
+            <genre>Hip Hop</genre>
+        </genres>
+        <year>2015</year>
+    </song>
+
+    <song id="even">
+        <title>Despacito</title>
+        <artists>
+            <artist>Justin Bieber</artist>
+            <artist>Daddy Yankee</artist>
+            <artist>Luis Fonsi</artist>
+        </artists>
+        <genres>
+            <genre>Pop</genre>
+            <genre>Latin pop</genre>
+            <genre>Reggaeton</genre>
+        </genres>
+        <year>2017</year>
+    </song>
+
+    <song id="odd">
+        <title>Take What You Want</title>
+        <artists>
+            <artist>Post Malone</artist>
+            <artist>Ozzy Osbourne</artist>
+            <artist>Travis Scott</artist>
+        </artists>
+        <genres>
+            <genre>Hip hop</genre>
+            <genre>Trap</genre>
+            <genre>Rock</genre>
+        </genres>
+        <year>2019</year>
+    </song>
+
+    <song id="even">
+        <title>Summer Bummer</title>
+        <artists>
+            <artist>Lana Del Ray</artist>
+            <artist>A$AP Rocky</artist>
+            <artist>Playboi Carti</artist>
+        </artists>
+        <genres>
+            <genre>Indie Pop</genre>
+            <genre>Trap</genre>
+            <genre>Hip hop</genre>
+        </genres>
+        <year>2017</year>
+    </song>
+
+    <song id="odd">
+        <title>Ice Cream</title>
+        <artists>
+            <artist>Selena Gomez</artist>
+            <artist>Blackpink</artist>
+        </artists>
+        <genres>
+            <genre>Electropop</genre>
+            <genre>K-pop</genre>
+        </genres>
+        <year>2020</year>
+    </song>
+
+    <song id="even">
+        <title>I Think I'm OKAY</title>
+        <artists>
+            <artist>Machine Gun Kelly</artist>
+            <artist>YUNGBLUD</artist>
+            <artist>Travis Barker</artist>
+        </artists>
+        <genres>
+            <genre>Pop</genre>
+            <genre>Hip Hop</genre>
+            <genre>Pop Punk</genre>
+        </genres>
+        <year>2019</year>
+    </song>
+
+    <song id="odd">
+        <title>I Like It</title>
+        <artists>
+            <artist>J Balvin</artist>
+            <artist>Bad Bunny</artist>
+            <artist>Cardi B</artist>
+        </artists>
+        <genres>
+            <genre>Latin</genre>
+            <genre>Trap</genre>
+            <genre>Hip Hop</genre>
+        </genres>
+        <year>2018</year>
+    </song>
+
+    <song id="even">
+        <title>IDOL</title>
+        <artists>
+            <artist>Nicki Minaj</artist>
+            <artist>BTS</artist>
+        </artists>
+        <genres>
+            <genre>K-Pop</genre>
+            <genre>Hip Hop</genre>
+        </genres>
+        <year>2018</year>
+    </song>
+
+    <song id="odd">
+        <title>Let Me Go</title>
+        <artists>
+            <artist>Hailee Steinfeld</artist>
+            <artist>Florida Georgia Line</artist>
+            <artist>Alesso</artist>
+            <artist>WATT</artist>
+        </artists>
+        <genres>
+            <genre>Country</genre>
+            <genre>Pop</genre>
+            <genre>EDM</genre>
+        </genres>
+        <year>2017</year>
+    </song>
+
+    <song id="even">
+        <title>Kiss and Make Up</title>
+        <artists>
+            <artist>Dua Lipa</artist>
+            <artist>Blackpink</artist>
+        </artists>
+        <genres>
+            <genre>Pop</genre>
+            <genre>K-Pop</genre>
+        </genres>
+        <year>2017</year>
+    </song>
+</Songs>

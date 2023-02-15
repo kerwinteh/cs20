@@ -1,0 +1,95 @@
+header {
+    display: block;
+    font-size: xxx-large;
+    padding: 50px;
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+
+Songs {
+    background-color: #fff8dd;
+}
+
+song {
+    display: block;
+    padding: 20px;
+    padding-left: 35px;
+    border-radius: 40px;
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Palatino, sans-serif;
+}
+
+title {
+    font-size: xx-large;
+    font-family: Optima, sans-serif;
+    font-weight: bold;
+
+}
+
+/*title:before {*/
+/*    content: "Title:";*/
+/*    padding-right: 3px;*/
+/*    font-weight: normal;*/
+/*}*/
+
+artists {
+    display: block;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/*artists:before {*/
+/*    content: "Artists:";*/
+/*    padding-right: 3px;*/
+/*    font-weight: normal;*/
+/*}*/
+
+artist:after {
+    content: "," ;
+    padding-right: 3px;
+}
+
+artist:last-of-type:after {
+    content: "";
+}
+
+genres, year{
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*genres:before{*/
+/*    content: "Genres:";*/
+/*    padding-right: 3px;*/
+/*    font-weight: normal;*/
+/*}*/
+
+genre:after {
+    content: ",";
+    padding-right: 3px;
+}
+
+genre:last-of-type:after {
+    content: "";
+}
+
+
+/*year:before {*/
+/*    content: "Year released:";*/
+/*    font-weight: normal;*/
+/*    padding-right: 5px;*/
+/*}*/
+
+#odd {
+    background-color: #a0d2eb ;
+}
+
+#even {
+    background-color: #8d99a0;
+}
+
+
+

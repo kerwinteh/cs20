@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joe's Hotdog Stand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Joe's Hotdog Stand</h1>
+    <div class="row">
+        <div class="column">
+            <h3 class="header">Item</h3>
+            <h3>Hotdogs</h3>
+            <h3>Fries</h3>
+            <h3>Sodas</h3>
+        </div>
+        <div class="column">
+            <h3 class="header">Quantity</h3>
+            <h3 id="hotdogsq"></h3>
+            <h3 id="friesq"></h3>
+            <h3 id="sodasq"></h3>
+        </div>
+        <div class="column">
+            <h3 class="header">Price</h3>
+            <h3 id="hotdogsp"></h3>
+            <h3 id="friesp"></h3>
+            <h3 id="sodasp"></h3>
+        </div>
+    </div>
+    <br/>
+
+    <div class="Total">
+        <h3 id="subtotal">Subtotal: $</h3>
+        <h3 id="discount">Special discount: $</h3>
+        <h3 id="tax">Tax (6.25%): $</h3>
+        <h3 id="total">Total: $</h3>
+    </div>
+
+    <script>
+        priceH = 4.0;
+        priceF = 3.5;
+        priceS = 1.75;
+        hotdogs = parseInt(prompt("How many hotdogs do you want?"));
+        fries = parseInt(prompt("How many fries do you want?"));
+        sodas = parseInt(prompt("How many sodas do you want?"));
+        document.getElementById("hotdogsq").innerHTML = hotdogs;
+        document.getElementById("friesq").innerHTML = fries;
+        document.getElementById("sodasq").innerHTML = sodas;
+        totalHotdogs = priceH * hotdogs;
+        totalFries = priceF * fries;
+        totalSodas = priceS * sodas;
+
+        document.getElementById("hotdogsp").innerHTML += "$" + totalHotdogs + ".00";
+
+        if(fries % 2 === 0){
+            document.getElementById("friesp").innerHTML += "$" + totalFries + ".00";
+        } else {
+            document.getElementById("friesp").innerHTML += "$" + totalFries + "0";
+        }
+
+        if(sodas % 4 === 0) {
+            document.getElementById("sodasp").innerHTML += "$" + totalSodas + ".00";
+        } else if(sodas % 2 === 0){
+            document.getElementById("sodasp").innerHTML += "$" + totalSodas + "0";
+        } else {
+            document.getElementById("sodasp").innerHTML += "$" + totalSodas;
+        }
+
+
+        subtotal = totalHotdogs + totalFries + totalSodas;
+
+        document.getElementById("subtotal").innerHTML += subtotal;
+
+        discount = 0.10 * subtotal;
+        discount = Math.round(discount * 100) / 100;
+        discount = parseFloat(discount);
+
+        if(subtotal >= 20) {
+            document.getElementById("discount").innerHTML += discount;
+            subtotal -= discount;
+        }
+        else {
+            discount = 0;
+            document.getElementById("discount").innerHTML += discount;
+        }
+
+        tax = 0.0625 * subtotal;
+        tax = Math.round(tax * 100) / 100;
+        tax = parseFloat(tax);
+        document.getElementById("tax").innerHTML += tax;
+
+        total = subtotal + tax;
+        total = Math.round(total * 100) / 100;
+        document.getElementById("total").innerHTML += total;
+    </script>
+
+</body>
+</html>
