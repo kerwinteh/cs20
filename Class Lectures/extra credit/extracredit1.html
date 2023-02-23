@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extra Credit 1</title>
+  <style>
+    input {
+      width: 60px;
+    }
+    .jump {
+      margin-top: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    body {
+      background-color: #E7F3FA;
+    }
+  </style>
+</head>
+<body>
+<section class="jump">
+  <input type="text" value="abc" id="text1" onblur="getVal(id)">
+  <button id="button" value="toRight">JUMP ></button>
+  <input type="text" value="" id="text2"  onblur="getVal(id)">
+</section>
+
+
+  <script>
+    DEFAULT_VAL = "abc";
+    let val = DEFAULT_VAL;
+    btn = document.getElementById("button");
+    function getVal(textId) {
+      val = document.getElementById(textId).value;
+      if ( document.getElementById("text1").value !== "" && document.getElementById("text2").value === "" ) {
+        btn.innerHTML = "JUMP >";
+      } else if(document.getElementById("text2").value !== "" && document.getElementById("text1").value === "" ) {
+        btn.innerHTML = "< JUMP";
+      }
+    }
+
+    btn.onclick = function () {
+      //if text1 empty
+      if ( document.getElementById("text1").value !== "" && document.getElementById("text2").value === "" ) {
+            document.getElementById("text1").value = "";
+            document.getElementById("text2").value = val;
+            btn.innerHTML = "< JUMP";
+            btn.value = "toLeft";
+      } else if(document.getElementById("text2").value !== "" && document.getElementById("text1").value === "" ) {
+            document.getElementById("text2").value = "";
+            document.getElementById("text1").value = val;
+            btn.innerHTML = "JUMP >";
+            btn.value = "toRight";
+      }
+    }
+  </script>
+</body>
+</html>

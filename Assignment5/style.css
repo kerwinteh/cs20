@@ -1,0 +1,43 @@
+body {
+    background-color: #a0d2eb;
+}
+
+h1, h3{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+h3 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 42%;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    padding: 5px 30px 5px 30px;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#table {
+    display: grid;
+    justify-content: center;
+}
+
+.grid {
+    font-size: xx-large;
+    background: #E5EAF5;
+    border: 1px solid black;
+    width: 120px;
+    height: 120px;
+    vertical-align: top;
+}

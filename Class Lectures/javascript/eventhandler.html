@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        NUM_BUTTONS = 4;
+        function showButton(n) {
+            alert("you pressed Button " + n);
+        }
+        window.onload = function() {
+            for (let i = 0; i < 3; i++) {
+                btnObj = document.getElementById("btn" + (i + 1))
+                btnObj.onclick = function () {
+                    alert("you pressed " + (i + 1) + "!")
+                }
+            }
+        } //end window.onload
+    </script>
+</head>
+<body>
+<script>
+    for(let n=0; n < NUM_BUTTONS; n++) {
+        btnNum = n+1;
+        console.log('<input type="button" value="Button' + btnNum">');
+    }
+</script>
+    <button type="button" value="button1" id="btn1">Button 1</button>
+    <button type="button" value="button2" id="btn2">Button 2</button>
+    <button type="button" value="button2" id="btn3">Button 3</button>
+
+
+</body>
+</html>
