@@ -2,6 +2,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Jade Delight</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -73,7 +77,7 @@ function td(content, className="")
   document.writeln(s);
 </script>
 </table>
-<p class="subtotal totalSection"><label>Subtotal</label>: 
+<p class="subtotal totalSection"><label>Subtotal:</label>
    $ <input type="text"  name='subtotal' id="subtotal" />
 </p>
 <p class="tax totalSection"><label>Mass tax 6.25%:</label>
@@ -86,4 +90,6 @@ function td(content, className="")
 
 </form>
 </body>
+
+
 </html>

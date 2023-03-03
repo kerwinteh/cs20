@@ -1,0 +1,27 @@
+body {
+    margin: 20px;
+    font-family: "Comic Sans MS", sans-serif;
+    background: beige;
+}
+
+label {
+    display: table-cell;
+    text-align: left;
+    width: 130px;
+}
+
+input[type=text] {
+    color: black;
+    display: table-cell;
+    text-align: left;
+}
+
+p {
+    /*child-align: left;*/
+    display: flex;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+}
