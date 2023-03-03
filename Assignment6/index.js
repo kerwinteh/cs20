@@ -24,7 +24,7 @@ $(document).ready(function (){
         radioCheck(pickup, deliver);
     })
 
-    //add listeners to all food
+    //add listeners to food
     for(let i = 0; i < 5; i ++) {
         $('select[name="quan' + i.toString() + '"]').change(function (){
             quantity[i] = this.value;
@@ -55,8 +55,6 @@ $(document).ready(function (){
     $('input[type=button]').click(function (){
         if(validate()) {
             checkOut();
-        } else {
-
         }
     })
 
@@ -219,8 +217,10 @@ function checkOut(){
     new_win.document.write("<h4> Subtotal: $" + total_cost.toFixed(2) + "</h4>");
     new_win.document.write("<h4> Tax: $" + tax.toFixed(2) + "</h4>");
     new_win.document.write("<h4> Total Cost: $" + final_cost.toFixed(2) + "</h4>");
-    // new_win.document.write("<h4> Estimate Completion Time: " + get_time(is_delivery ? 40 : 20) +
-    //     "</h4>");
+    if(is_delivery) {
+        new_win.document.write("<h4>Street: " + street + "</h4>");
+        new_win.document.write("<h4>City: " + city + "</h4>");
+    }
     new_win.document.write("<h4> Estimated time: " + calcTime());
 }
 
