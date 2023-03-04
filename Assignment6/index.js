@@ -179,9 +179,6 @@ function calcTime(){
     let now = new Date();
     let fifteenMinutesLater = new Date(now.getTime() + (15 * 60 * 1000));
     let fortyFiveMinutesLater = new Date(now.getTime() + (45 * 60 * 1000));
-    // console.log(fifteenMinutesLater);
-    // console.log(fifteenMinutesLater.getHours());
-    // console.log(fifteenMinutesLater.getMinutes());
     if(is_delivery) {
         let hour = fortyFiveMinutesLater.getHours();
         let minute = fortyFiveMinutesLater.getMinutes();
@@ -213,7 +210,6 @@ function checkOut(){
     }
 
     new_win.document.write("<br><br><br><br>")
-    // new_win.document.write("<div class='line'></div>");
     new_win.document.write("<h4> Subtotal: $" + total_cost.toFixed(2) + "</h4>");
     new_win.document.write("<h4> Tax: $" + tax.toFixed(2) + "</h4>");
     new_win.document.write("<h4> Total Cost: $" + final_cost.toFixed(2) + "</h4>");
