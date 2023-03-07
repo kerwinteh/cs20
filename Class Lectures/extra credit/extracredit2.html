@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkbox</title>
+    <script>
+      function checkAll(source) {
+        // Get all checkboxes
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        // Check or uncheck all checkboxes except the source checkbox
+        for (var i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i] != source) {
+            checkboxes[i].checked = source.checked;
+          }
+        }
+        // Change the label of the source checkbox
+        if (source.checked) {
+          console.log("checked!!");
+          document.getElementById("check-all-box").innerHTML = "Uncheck All"
+        } else {
+          document.getElementById("check-all-box").innerHTML = "Check All";
+        }
+      }
+    </script>
+</head>
+<body>
+<h1>Choose Your Options:</h1>
+
+<form>
+  <input type="checkbox" id="check-all" onchange="checkAll(this)">
+  <label for="check-all" id="check-all-box">Check All</label><br>
+
+  <input type="checkbox" id="option1" name="option1" value="option1">
+  <label for="option1">Option 1</label><br>
+
+  <input type="checkbox" id="option2" name="option2" value="option2">
+  <label for="option2">Option 2</label><br>
+
+  <input type="checkbox" id="option3" name="option3" value="option3">
+  <label for="option3">Option 3</label><br>
+
+  <input type="checkbox" id="option4" name="option4" value="option4">
+  <label for="option4">Option 4</label><br>
+
+  <input type="checkbox" id="option5" name="option5" value="option5">
+  <label for="option5">Option 5</label><br>
+</form>
+
+</body>
+</html>
