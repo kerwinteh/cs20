@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow</title>
+    <style>
+      img {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transition: opacity 1s ease-in-out;
+        opacity: 1;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      let images = [
+        "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80",
+        "https://picsum.photos/id/238/400/300",
+        "https://picsum.photos/id/239/400/300",
+        "https://picsum.photos/id/240/400/300",
+        "https://picsum.photos/id/241/400/300"
+      ];
+      let currentImageIndex = 0;
+      let slideshowIntervalId = null;
+
+      function startSlideshow() {
+        slideshowIntervalId = setInterval(fadeToNextImage, 3000);
+        $("#start-button").prop("disabled", true);
+        $("#stop-button").prop("disabled", false);
+      }
+
+      function stopSlideshow() {
+        clearInterval(slideshowIntervalId);
+        slideshowIntervalId = null;
+        $("#start-button").prop("disabled", false);
+        $("#stop-button").prop("disabled", true);
+      }
+
+      function fadeToNextImage() {
+            let currentImage = $("#slideshow img").eq(currentImageIndex);
+            currentImage.animate({opacity: 0}, 1000, function() {
+                  // Hide the current image and reset its opacity
+                  currentImage.hide().css("opacity", 1);
+
+                  // Move to the next image in the array
+                  currentImageIndex = (currentImageIndex + 1) % images.length;
+
+                  // Show and fade in the next image
+                  let nextImage = $("#slideshow img").eq(currentImageIndex);
+                  nextImage.show().animate({opacity: 1}, 1000);
+        });
+      }
+    </script>
+</head>
+<body>
+<h1>Slideshow</h1>
+
+<div id="slideshow">
+  <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80">
+</div>
+
+<button id="start-button" onclick="startSlideshow()">Start</button>
+<button id="stop-button" onclick="stopSlideshow()" disabled>Stop</button>
+
+<script>
+  // Preload images
+  $(images).each(function(index, url) {
+    $("<img>").attr("src", url);
+  });
+</script>
+
+</body>
+</html>
