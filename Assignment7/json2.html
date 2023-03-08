@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <p id="raw-data"></p>
   <h1>Song List</h1>
   <label for="genre">Select a genre:</label>
   <select id="genre">
@@ -14,10 +15,15 @@
   <button id="filter-btn">Filter</button>
   <div id="song-list"></div>
   <script>
-    fetch('data.json')
+      fetch('data.json')
             .then(response => response.json()) // Parse the JSON data
             .then(data => {
-              showAllSongs(data);
+                let raw_string = document.getElementById("raw-data");
+                let stringify = JSON.stringify(data);
+                raw_string.innerText = stringify;
+
+
+                showAllSongs(data);
               const genres = getGenres(data); // get all genres from the song list
               const genreSelect = document.querySelector('#genre');
 
