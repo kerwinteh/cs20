@@ -1,16 +1,14 @@
-header {
+body {
     display: block;
-    font-size: xxx-large;
+    font-size: x-large;
     padding: 50px;
     text-align: center;
     font-family: "Comic Sans MS";
+    background-color: #a0d2eb ;
 }
 
-Songs {
-    background-color: #fff8dd;
-}
 
-song {
+#main-container {
     display: block;
     padding: 20px;
     padding-left: 35px;
@@ -19,55 +17,28 @@ song {
     margin-left: 20%;
     margin-right: 20%;
     font-family: Palatino, sans-serif;
+    background-color: #8d99a0;
 }
 
-title {
+.title {
     font-size: xx-large;
     font-family: Optima, sans-serif;
     font-weight: bold;
-
 }
 
-artists {
+.artist {
     display: block;
     font-size: x-large;
     font-weight: bold;
 }
 
-
-
-artist:after {
-    content: "," ;
-    padding-right: 3px;
-}
-
-artist:last-of-type:after {
-    content: "";
-}
-
-genres, year{
+.genre, year{
     display: block;
     font-weight: bold;
     font-size: x-large;
 }
 
 
-genre:after {
-    content: ",";
-    padding-right: 3px;
-}
-
-genre:last-of-type:after {
-    content: "";
-}
-
-#odd {
-    background-color: #a0d2eb ;
-}
-
-#even {
-    background-color: #8d99a0;
-}
 
 
 

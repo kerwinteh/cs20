@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Song List</h1>
+  <label for="genre">Select a genre:</label>
+  <select id="genre">
+      <option value="">All Genres</option>
+  </select>
+  <button id="filter-btn">Filter</button>
+  <div id="song-list"></div>
+  <script>
+    fetch('data.json')
+            .then(response => response.json()) // Parse the JSON data
+            .then(data => {
+              showAllSongs(data);
+              const genres = getGenres(data); // get all genres from the song list
+              const genreSelect = document.querySelector('#genre');
+
+              //genre dropdown
+              genres.forEach(genre => {
+                const option = document.createElement('option');
+                option.value = genre;
+                option.textContent = genre;
+                genreSelect.appendChild(option);
+              });
+
+              //control what the filter button does
+              const filterBtn = document.querySelector('#filter-btn');
+              filterBtn.addEventListener('click', function() {
+                const selectedGenre = genreSelect.value;
+                const filteredSongs = data.filter(song => {
+                  return selectedGenre ? song.genre.includes(selectedGenre) : true;
+                });
+                console.log(filteredSongs);
+
+                const songList = document.querySelector('#song-list');
+                songList.innerHTML = '';
+
+                if (filteredSongs.length > 0) {
+                  filteredSongs.forEach(song => {
+                      const div = document.createElement("div");
+                      div.setAttribute("id", "main-container");
+                      const title = document.createElement('h2');
+                      title.setAttribute("class", "title");
+                      title.innerHTML = song.title;
+
+                      div.appendChild(title);
+                      songList.appendChild(div);
+                  });
+                } else {
+                  songList.innerHTML = 'No songs found';
+                }
+              });
+            });
+
+    function showAllSongs(data){
+       data.forEach(song => {
+         const container = document.getElementById("song-list");
+         const div = document.createElement("div");
+         div.setAttribute("id", "main-container");
+
+         const title = document.createElement('h2');
+         title.setAttribute("class", "title");
+
+         const artist = document.createElement('p');
+         artist.setAttribute("class", "artist");
+
+         const genre = document.createElement('p');
+         genre.setAttribute("class", "genre");
+
+         const year = document.createElement('p');
+         year.setAttribute("class", "year");
+
+         title.innerHTML = song.title;
+         artist.innerHTML = `Artists: ${song.artists}`;
+         genre.innerHTML = `Genre: ${song.genre}`;
+         year.innerHTML = `Released ${song.year}`;
+
+         // Append the HTML elements to the container
+         div.appendChild(title);
+         div.appendChild(artist);
+         div.appendChild(genre);
+         div.appendChild(year);
+         container.append(div);
+       })
+    }
+
+    function getGenres(songList) {
+      const genres = new Set();
+      songList.forEach(song => {
+        song.genre.forEach(genre => genres.add(genre));
+      });
+      return Array.from(genres);
+    }
+  </script>
+</body>
+</html>

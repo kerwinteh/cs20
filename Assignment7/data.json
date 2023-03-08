@@ -1,0 +1,92 @@
+[
+    {
+      "title": "Bad Blood",
+      "artists": ["Taylor Swift", "Kendrick Lamar"],
+      "genre": ["Pop", "Hip-Hop"],
+      "year": 2015
+    },
+    {
+      "title": "Despacito",
+      "artists": ["Justin Bieber", "Daddy Yankee", "Luis Fonsi"],
+      "genre": ["Pop", "Latin Pop", "Reggaeton"],
+      "year": 2017
+    },
+    {
+      "title": "Take What You Want",
+      "artists": ["Post Malone", "Ozzy Osbourne", "Travis Scott"],
+      "genre": ["Hip-Hop", "Trap", "Rock"],
+      "year": 2019
+    },
+    {
+      "title": "Summer Bummer",
+      "artists": ["Lana Del Ray", "A$AP Rocky", "Playboi Carti"],
+      "genre": ["Indie Pop", "Trap", "Hip-Hop"],
+      "year": 2017
+    },
+    {
+      "title": "Ice Cream",
+      "artists": ["Selena Gomez", "Blackpink"],
+      "genre": ["Electropop", "K-Pop"],
+      "year": 2020
+    },
+    {
+      "title": "I Think I'm OKAY",
+      "artists": ["Machine Gun Kelly", "YUNGBLUD", "Travis Barker"],
+      "genre": ["Pop", "Hip-Hop", "Pop Punk"],
+      "year": 2019
+    },
+    {
+      "title": "I Like It",
+      "artists": ["J Balvin", "Bad Bunny", "Cardi B"],
+      "genre": ["Latin", "Trap", "Hip-Hop"],
+      "year": 2018
+    },
+    {
+      "title": "IDOL",
+      "artists": ["Nicki Minaj", "BTS"],
+      "genre": ["K-Pop", "Hip-Hop"],
+      "year": 2018
+    },
+    {
+      "title": "Let Me Go",
+      "artists": ["Hailee Steinfeld", "Florida Georgia Line"],
+      "genre": ["Country", "Pop", "EDM"],
+      "year": 2017
+    },
+    {
+      "title": "Kiss and Make Up",
+      "artists": ["Dua Lipa", "Blackpink"],
+      "genre": ["Pop", "K-Pop"],
+      "year": 2017
+    },
+    {
+      "title": "Rich Flex",
+      "artists": ["Drake", "21 Savage"],
+      "genre": ["Hip-Hop"],
+      "year": 2022
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "artists": "Queen",
+      "genre": ["Glam Rock", "Heavy Rock", "Classical"],
+      "year": 2022
+    },
+    {
+      "title": "First Class",
+      "artists": "Jack Harlow",
+      "genre": ["Pop", "Hip-Hop"],
+      "year": 2022
+    },
+    {
+      "title": "Levitating",
+      "artists": ["Dua Lipa", "DaBaby"],
+      "genre": ["Pop", "Hip-Hop"],
+      "year": 2020
+    },
+    {
+      "title": "STAY",
+      "artists": ["The Kid LAROI", "Justin Bieber"],
+      "genre": ["Pop"],
+      "year": 2022
+    }
+]
