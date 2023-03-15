@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APIs</title>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #2d2f45;
+            color: white;
+            width: 100%;
+            display: flex;
+            margin: 2%;
+        }
+
+        h2{
+            background-color: #62b89d;
+            border-radius: 25px;
+            padding: 25px;
+            width: 80%;
+        }
+
+        p {
+            max-width: 70%;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>APIs</h1>
+    <h2>Using AJAX</h2>
+    <p id="AJAX"></p>
+    <br/><br/>
+
+    <h2>Using Fetch</h2>
+    <p id="fetch"></p>
+    <br/><br/><br/><br/><br/>
+
+    <h3>API Results</h3>
+    <p>This is CoinCap API. It gives real-time pricing and market activity for over 1000 cryptocurrencies.</p>
+    <p>API website: https://docs.coincap.io/</p>
+    <p>There are several options for this API. The one I used was the asset option where I can see a list
+    of asset data they have. From there, I filtered the assets by id and used that to find bitcoin data such as
+    its name, symbol and current real time price.</p>
+    <p>2 options where this could be useful is when trying to create a cryptocurrency trading app and
+    when someone just simply wants to keep track of the bitcoin prices without having to go into an app everyday.
+    For example, by using this API, I can just open this website and check live bitcoin prices everyday!</p>
+    <br/><br/>
+
+    <h3>Question</h3>
+    <p>The most challenging part about this assignment was figuring out how to access the element I wanted to
+    in the json object using javascript. The most satisfying part of this assignment was after I completed it and
+    refreshed, I saw the bitcoin prices actually changing according to real time and I didn't know it did that
+    prior to doing this assignment.</p>
+</div>
+</body>
+</html>
