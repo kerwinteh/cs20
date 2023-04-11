@@ -1,0 +1,45 @@
+[07-Apr-2023 20:17:12 UTC] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php on line 28
+[07-Apr-2023 20:30:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php on line 29
+[07-Apr-2023 20:45:41 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php on line 54
+[07-Apr-2023 20:45:51 UTC] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php on line 62
+[07-Apr-2023 20:55:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function toFixed() in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php on line 54
+[09-Apr-2023 22:48:13 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php on line 78
+[09-Apr-2023 22:48:21 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/menu.php on line 78
+[10-Apr-2023 01:27:14 UTC] PHP Parse error:  syntax error, unexpected '.0' (T_DNUMBER), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 75
+[10-Apr-2023 01:41:52 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 63
+[10-Apr-2023 01:49:14 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 67
+[10-Apr-2023 01:49:25 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 67
+[10-Apr-2023 01:49:27 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 67
+[10-Apr-2023 01:49:36 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 87
+[10-Apr-2023 01:49:38 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 87
+[10-Apr-2023 02:32:33 UTC] PHP Fatal error:  Uncaught Exception: DateTimeZone::__construct(): Unknown or bad timezone (UTC+00:00) in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php:96
+Stack trace:
+#0 /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php(96): DateTimeZone->__construct('UTC+00:00')
+#1 {main}
+  thrown in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 96
+[10-Apr-2023 02:32:43 UTC] PHP Fatal error:  Uncaught Exception: DateTimeZone::__construct(): Unknown or bad timezone (UTC+00:00) in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php:96
+Stack trace:
+#0 /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php(96): DateTimeZone->__construct('UTC+00:00')
+#1 {main}
+  thrown in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 96
+[10-Apr-2023 02:33:17 UTC] PHP Fatal error:  Uncaught Exception: DateTimeZone::__construct(): Unknown or bad timezone (UTC+00:00) in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php:96
+Stack trace:
+#0 /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php(96): DateTimeZone->__construct('UTC+00:00')
+#1 {main}
+  thrown in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 96
+[10-Apr-2023 03:33:21 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 83
+[10-Apr-2023 03:33:29 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php:82
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 82
+[10-Apr-2023 03:34:09 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php:82
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 82
+[11-Apr-2023 14:06:08 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /home/customer/www/kerwint.sgedu.site/public_html/cs20/TwoOwlsCafe/orderSummary.php on line 83
